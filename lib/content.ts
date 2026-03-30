@@ -69,22 +69,22 @@ export const processSteps = [
   },
 ];
 
-export type Plan = {
-  name: string;
-  price: string;
-  pages: string;
-  photos: string;
-  popular: boolean;
+export const pricing = {
+  planName: "オンラインのノレンを掛ける",
+  price: "¥98,000",
+  setupFee: "+ ¥20,000 初期設定費",
+  setupNote: "ドメイン取得・Vercel設定・Google Search Console",
+  includes: [
+    "制作済みデモサイトをそのまま納品",
+    "写真の差し替え（お客様提供の写真に変更）",
+    "ドメイン取得・設定",
+    "Vercelアカウント作成・公開設定",
+    "操作マニュアル（PDF）",
+  ],
+  addonNote: "ページ追加・コンテンツ変更・SNS連携など、追加オプションのカタログをご用意しています。",
+  addonCta: "カタログはお問い合わせください →",
+  cta: "まずは無料相談",
 };
-
-export const plans: Plan[] = [
-  { name: "ライト", price: "¥98,000", pages: "3", photos: "5枚", popular: false },
-  { name: "スタンダード", price: "¥198,000", pages: "5", photos: "15枚", popular: true },
-  { name: "プレミアム", price: "¥298,000", pages: "8", photos: "無制限", popular: false },
-];
-
-export const pricingNote =
-  "全プラン共通：+¥20,000 初期設定費（ドメイン・Vercel・Google Search Console）";
 
 export const faq = [
   {
@@ -104,10 +104,6 @@ export const faq = [
     a: "フリー素材でも制作できます。ただし、実際のお店の写真を使った方が格段に魅力的になります。",
   },
 ];
-
-export const planFeatures = ["スマホ対応", "お問い合わせフォーム"];
-
-export const planCta = "このプランで相談する";
 
 export const contact = {
   headline: "まずは無料でご相談ください",
