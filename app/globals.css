@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #c8a96e;
+  --color-gold-dark: #b8935a;
+  --color-warm-bg: #fdfaf6;
+  --color-warm-alt: #f4f0e8;
+  --color-line-green: #06c755;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+
+  --font-sans: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo",
+    "Yu Gothic", sans-serif;
+}
+
+body {
+  background-color: var(--color-warm-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
